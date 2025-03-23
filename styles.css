@@ -33,7 +33,7 @@ h3 {
     color: #ff8c00;
     font-size: 18px;
     position: relative;
-    right: 30%;
+    rigth: 80%;
     top: 25px;
 }
 
@@ -234,7 +234,7 @@ body.light-mode button:hover {
 /* Schalter für Dark/Light Mode */
 .switch {
     position: relative;
-    left: 100%;
+    left: 80%;
     top: 25px;
     display: inline-block;
     width: 60px;
