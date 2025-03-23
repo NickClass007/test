@@ -28,6 +28,15 @@ h3 {
     top: 100px;
 }
 
+.settings {
+    text-align: center;
+    color: #ff8c00;
+    font-size: 18px;
+    position: relative;
+    left: 30%;
+    top: 25px;
+}
+
 /* Dark Mode */
 body {
     background-color: #2d2d2d;
