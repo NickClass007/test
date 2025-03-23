@@ -29,12 +29,11 @@ h3 {
 }
 
 .settings {
-    text-align: center;
+    position: relative;
+    left: 20%;
+    top: 25px;
     color: #ff8c00;
     font-size: 18px;
-    position: relative;
-    rigth: 80%;
-    top: 25px;
 }
 
 /* Dark Mode */
