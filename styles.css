@@ -14,19 +14,8 @@ header a {
   margin-right: 16px;
   text-decoration: none;
   color: rgba(2, 0, 0, 0.418);
-  /* display: flex;
-  justify-content: flex-end;
-  align-items: center; */
 }
 
-/* header h1 {
-  margin-left: 16px;
-  text-decoration: none;
-  color: rgba(2, 0, 0, 0.418);
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; */
-}
 header a:hover {
   color: rgba(2, 0, 0, 0.829);
 }
