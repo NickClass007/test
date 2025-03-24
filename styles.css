@@ -313,3 +313,19 @@ button {
 button:hover {
     background-color: #68b0a5;
 }
+
+.texts {
+    position: fixed;
+    top: 25px;  /* Abstand vom unteren Rand */
+    right: 25px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Hier die Rundung */
+}
