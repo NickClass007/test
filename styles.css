@@ -25,17 +25,26 @@ h2 {
     font-size: 18px;
     position: relative;
     left: 30px;
-    top: 100px;
-} */
-
-.settings {
+    top:*/
+/*.settings {
     position: relative;
     right: 50%;
     top: 25px;
     display: inline-block;
     color: #ff8c00;
     font-size: 20px;
+}*/
+.settings {
+    position: relative;
+    top: 25px;
+    left: 50%; /* Ändere right: 50% zu left: 50% */
+    display: inline-block;
+    transform: translateX(-50%); /* Zentriere das Element horizontal */
+    color: #ff8c00;
+    font-size: 20px;
 }
+
+
 
 /* Dark Mode */
 body.dark-mode {
