@@ -317,10 +317,10 @@ button:hover {
 .texts {
     position: fixed;
     top: 35% ;  /* Abstand vom unteren Rand */
-    left: 10%;
+    left: 5%;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
