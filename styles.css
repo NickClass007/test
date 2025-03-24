@@ -1,247 +1,89 @@
-/* Allgemeine Einstellungen */
+/* Grundlegendes Layout und Styling für den Body */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
-    padding: 20px;
-    transition: background-color 0.3s;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1, h2 {
-    text-align: center;
-    color: #ff8c00;
-}
-
+/* Überschriften */
 h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 20px;
 }
 
 h2 {
-    font-size: 20px;
-    margin-bottom: 16px;
-}
-
-/* Container für Einstellungen und Schalter nebeneinander */
-.settings-container {
-    display: flex; /* Flexbox verwenden, um Elemente nebeneinander anzuzeigen */
-    justify-content: space-between; /* Die Elemente gleichmäßig auf der Zeile verteilen */
-    align-items: center; /* Vertikale Ausrichtung der Elemente */
-    margin-top: 25px;
-}
-
-/* Einstellungen */
-.settings {
-    color: #ff8c00;
-    font-size: 18px;
-}
-
-/* Dark Mode */
-body {
-    background-color: #2d2d2d;
-    color: #e0e0e0;
-}
-
-body.light-mode {
-    background-color: #f0f0f0;
-    color: #333;
-}
-
-#menu {
-    display: flex;
-    justify-content: space-around;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 8px;
-}
-
-#menu a {
-    color: #e0e0e0;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-#menu a:hover, #menu a.active {
-    background-color: #ff8c00;
-}
-
-body.light-mode #menu {
-    background-color: #ddd;
-}
-
-body.light-mode #menu a {
-    color: #333;
-}
-
-body.light-mode #menu a:hover {
-    background-color: #ff8c00;
-    color: #fff;
-}
-
-/* Container */
-.container {
-    background-color: #363636;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-body.light-mode .container {
-    background-color: #e0e0e0;
-}
-
-/* Eingabefelder */
-input[type="text"] {
-    margin: 10px 0;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    width: 100%;
-    background-color: #d3d3d3;
-}
-
-body.light-mode input[type="text"] {
-    background-color: #ccc;
-}
-
-/* Tabellen */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-th, td {
-    padding: 16px;
-    text-align: left;
-    border: 1px solid #555;
-    text-overflow: ellipsis;
-    word-wrap: break-word;
-    white-space: normal;
-    border-radius: 8px;
-}
-
-th {
-    background-color: #666;
-    color: #e0e0e0;
-}
-
-body.light-mode th {
-    background-color: #ddd;
-    color: #333;
-}
-
-body.light-mode td {
-    border: 1px solid #ccc;
-}
-
-/* Scrollbare Tabelle */
-.scroll {
-    display: block;
-    overflow-x: auto;
+    font-size: 1.8em;
+    color: #444;
     margin-top: 10px;
 }
 
-.scroll thead, .scroll tbody {
-    display: block;
-    border-radius: 8px;
-}
-
-.scroll thead tr {
-    display: flex;
-}
-
-.scroll tbody tr {
-    display: flex;
-}
-
-.scroll thead th, .scroll tbody td {
-    flex: 1;
-}
-
-.scroll tbody {
-    overflow-y: auto;
-    max-height: 300px;
-    scrollbar-width: none;
-}
-
-.scroll tbody::-webkit-scrollbar {
-    display: none;
-}
-
-/* Buttons */
-button {
-    background-color: #ff8c00;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #ff6500;
-}
-
-button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #ff8c00;
-}
-
-/* Lichtmodus */
-body.light-mode button {
-    background-color: #76c7c0;
-}
-
-body.light-mode button:hover {
-    background-color: #68b0a5;
-}
-
-#start-training {
-    background-color: #4caf50;
-}
-
-#start-training:hover {
-    background-color: #45a049;
-}
-
-/* Vokabeln und Auswahl */
-#vocab-selection {
+/* Styling für das Menü */
+#menu {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 80%;
-    max-width: 600px;
-    margin-top: 20px;
-    overflow-y: auto;
-    flex-grow: 1;
+    align-items: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
 }
 
-#vocab-selection label {
-    margin: 5px 0;
+/* Links im Menü */
+#menu a {
+    text-decoration: none;
+    color: #007BFF;
     font-size: 1.2em;
+    margin: 10px 0;
+    transition: color 0.3s ease;
 }
 
-#vocab-selection input[type="checkbox"] {
-    margin-right: 10px;
+#menu a:hover {
+    color: #0056b3;
 }
 
-/* Schalter für Dark/Light Mode */
+/* Styling für die Einstellungen-Sektion */
+.settings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.settings {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styling für den Schalter */
 .switch {
+    position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
 }
 
+/* Verstecken des Standard-Checkboxes */
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
+/* Gestaltung des Sliders (Hintergrund des Schalters) */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -250,58 +92,29 @@ body.light-mode button:hover {
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    transition: .4s;
+    transition: 0.4s;
+    border-radius: 50px;
 }
 
+/* Der Kreis im Schalter */
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
     left: 4px;
     bottom: 4px;
     background-color: white;
-    transition: .4s;
+    transition: 0.4s;
 }
 
+/* Styling, wenn der Schalter aktiviert ist */
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #4CAF50;
 }
 
+/* Der Kreis bewegt sich nach rechts, wenn der Schalter aktiviert ist */
 input:checked + .slider:before {
     transform: translateX(26px);
 }
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
-}
-
-/* Vokabeln und Buttons */
-#file-selection, #vocab-selection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100%;
-    padding-bottom: 20px;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-top: 20px;
-    background-color: #76c7c0;
-    border: none;
-    border-radius: 5px;
-    color: white;
-}
-
-button:hover {
-    background-color: #68b0a5;
-}
-
