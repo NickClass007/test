@@ -39,7 +39,7 @@ h2 {
     top: 25px;
     left: 50%; /* Ändere right: 50% zu left: 50% */
     display: inline-block;
-    transform: translateX(-50%); /* Zentriere das Element horizontal */
+    /*transform: translateX(-50%); /* Zentriere das Element horizontal */
     color: #ff8c00;
     font-size: 20px;
 }
