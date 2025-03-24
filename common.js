@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const toggleSwitch = document.querySelector('#themeToggle');
+  const toggleSwitch = document.querySelector('#mode-switch');
   const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
   // Setze das gespeicherte Thema beim Laden der Seite
   if (currentTheme) {
     document.body.classList.add(currentTheme);
     if (currentTheme === 'light-mode') {
-      toggleSwitch.checked = true;
+      toggleSwitch.checked = true; // Aktiviert den Switch für Light Mode
     } else {
-      toggleSwitch.checked = false;
+      toggleSwitch.checked = false; // Deaktiviert den Switch für Dark Mode
     }
   }
 
@@ -16,8 +16,10 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleSwitch.addEventListener('change', function() {
     if (this.checked) {
       document.body.classList.add('light-mode');
+      document.body.classList.remove('dark-mode');
       localStorage.setItem('theme', 'light-mode');
     } else {
+      document.body.classList.add('dark-mode');
       document.body.classList.remove('light-mode');
       localStorage.setItem('theme', 'dark-mode');
     }
