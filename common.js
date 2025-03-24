@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const toggleSwitch = document.querySelector('#mode-switch');
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light-mode';  // Fallback auf light-mode, falls nichts gespeichert
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark-mode';  // Fallback auf light-mode, falls nichts gespeichert
 
   // Setze das gespeicherte Thema beim Laden der Seite
   document.body.classList.add(currentTheme);
