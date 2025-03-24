@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // Setze das gespeicherte Thema beim Laden der Seite
   document.body.classList.add(currentTheme);
   if (currentTheme === 'light-mode') {
-    toggleSwitch.checked = true;  // Aktiviert den Switch für Light Mode
+    toggleSwitch.checked = false;  // Aktiviert den Switch für Light Mode
   } else {
-    toggleSwitch.checked = false;  // Deaktiviert den Switch für Dark Mode
+    toggleSwitch.checked = true;  // Deaktiviert den Switch für Dark Mode
   }
 
   // Event Listener für den Umschalter (Switch)
