@@ -316,8 +316,8 @@ button:hover {
 
 .texts {
     position: fixed;
-    top: 25% ;  /* Abstand vom unteren Rand */
-    left: 25%;
+    top: 35% ;  /* Abstand vom unteren Rand */
+    left: 10%;
     border: none;
     color: white;
     padding: 15px 32px;
