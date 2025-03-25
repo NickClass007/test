@@ -30,7 +30,7 @@ h2 {
     font-size: 20px;
 }*/
 .settings {
-    position: flex;
+    position: relativ;
     top: 25px;
     left: 10%; 
     display: inline-block;
