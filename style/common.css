@@ -6,20 +6,6 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Übergänge für das Hintergrundfarbe und Textfarbe */
 }
 
-/*h1.dark-mode {
-    text-align: center;
-    color: #ff8c00;
-}
-h2.dark-mode {
-    text-align: center;
-    color: #ff8c00;
-}
-
-h1.light-mode, h2.light-mode {
-    text-align: center;
-    color: #76c7c0;
-}
-/* Gemeinsame Formatierung für h1 und h2 */
 h1, h2 {
   text-align: center;     /* Zentriert die Überschrift */
   margin-bottom: 20px;     /* Abstand nach unten */
@@ -48,16 +34,6 @@ h2 {
   font-size: 24px;         /* Schriftgröße für h2 */
 }
 
-/*h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 20px;
-    margin-bottom: 16px;
-}*/
-
 .settings {
     position: relative;
     top: 25px;
@@ -68,17 +44,6 @@ h2 {
     color: #ff8c00;
     font-size: 20px;
 }
-/*.settings {
-    position: fixed;
-    top: 35%;
-    left: 20%; 
-    display: inline-block;
-    color: #ff8c00;
-    font-size: 20px;
-    padding: 20px;
-}
-
-
 
 /* Dark Mode */
 body.dark-mode {
