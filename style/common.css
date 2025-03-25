@@ -32,9 +32,8 @@ h2 {
 .settings {
     position: fixed;
     top: 25px;
-    left: 10%; 
+    left: 20%; 
     display: inline-block;
-    transform: translateX(-50%);  
     color: #ff8c00;
     font-size: 20px;
 }
