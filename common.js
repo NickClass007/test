@@ -1,31 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const toggleSwitch = document.querySelector('#mode-switch');
-    const currentTheme = localStorage.getItem('theme') || 'dark-mode'; // Standardmäßig 'light-mode', wenn nichts gespeichert
+  const toggleSwitch = document.querySelector('#mode-switch');
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-    // Setze das gespeicherte Thema beim Laden der Seite
+  if (currentTheme) {
     document.body.classList.add(currentTheme);
-
-    // Setze den Zustand des Schalters (checked oder nicht) basierend auf dem gespeicherten Modus
     if (currentTheme === 'light-mode') {
-        toggleSwitch.checked = false;  // Light Mode -> Schalter ist nicht aktiviert
+      toggleSwitch.checked = true;
     } else {
-        toggleSwitch.checked = true;   // Dark Mode -> Schalter ist aktiviert
+      toggleSwitch.checked = false;
     }
+  }
 
-    // Event Listener für den Umschalter (Switch)
-    toggleSwitch.addEventListener('change', function() {
-        if (this.checked) {
-            document.body.classList.add('dark-mode');
-            document.body.classList.remove('light-mode');
-            localStorage.setItem('theme', 'dark-mode');
-        } else {
-            document.body.classList.add('light-mode');
-            document.body.classList.remove('dark-mode');
-            localStorage.setItem('theme', 'light-mode');
-        }
-    });
+  toggleSwitch.addEventListener('change', function() {
+    if (this.checked) {
+      document.body.classList.add('light-mode');
+      localStorage.setItem('theme', 'light-mode');
+    } else {
+      document.body.classList.remove('light-mode');
+      localStorage.setItem('theme', 'dark-mode');
+    }
+  });
 });
-
 
 // Event Listener für den "Dictionary"-Link
 document.getElementById('dictionary-link').addEventListener('click', function() {
