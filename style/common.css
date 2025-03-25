@@ -21,14 +21,14 @@ h2 {
     margin-bottom: 16px;
 }
 
-/*.settings {
+.settings {
     position: relative;
     right: 50%;
     top: 25px;
     display: inline-block;
     color: #ff8c00;
     font-size: 20px;
-}*/
+}
 /*.settings {
     position: fixed;
     top: 35%;
@@ -42,20 +42,6 @@ h2 {
 
 
 /* Dark Mode */
-
-.settings {
-    position: fixed;
-    top: 35%;       /* Positioniert das Element 35% vom oberen Rand des Viewports */
-    left: 20%;      /* Positioniert das Element 20% vom linken Rand des Viewports */
-    display: inline-flex; /* Text und Schalter nebeneinander anordnen */
-    align-items: center;  /* Vertikal zentrieren */
-    color: #ff8c00;  /* Textfarbe */
-    font-size: 20px; /* Schriftgröße */
-    padding: 10px;   /* Abstand um den Text */
-    margin-bottom: 20px; /* Abstand nach unten zwischen den Einstellungen */
-    background-color: rgba(255, 140, 0, 0.1); /* Optional: Hintergrundfarbe für bessere Sichtbarkeit */
-    border-radius: 5px; /* Optional: Ecken abrunden */
-}
 body.dark-mode {
     background-color: #2d2d2d;
     color: #e0e0e0;
