@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
   const toggleSwitch = document.querySelector('#mode-switch');
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark-mode';  // Fallback auf light-mode, falls nichts gespeichert
+  const currentTheme = localStorage.getItem('theme') || 'light-mode';  // Standardmäßig 'light-mode', wenn nichts gespeichert
 
   // Setze das gespeicherte Thema beim Laden der Seite
-  document.body.classList.add(currentTheme);
+  document.body.classList.add(currentTheme); 
+
+  // Setze den Zustand des Schalters (checked oder nicht) basierend auf dem gespeicherten Modus
   if (currentTheme === 'light-mode') {
-    toggleSwitch.checked = false;  // Aktiviert den Switch für Light Mode
+    toggleSwitch.checked = false;  // Light Mode -> Schalter ist nicht aktiviert
   } else {
-    toggleSwitch.checked = true;  // Deaktiviert den Switch für Dark Mode
+    toggleSwitch.checked = true;   // Dark Mode -> Schalter ist aktiviert
   }
 
   // Event Listener für den Umschalter (Switch)
