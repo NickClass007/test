@@ -24,6 +24,7 @@ h2 {
 .settings {
     position: relative;
     top: 25px;
+    left: 10%;
     width: 200px;                  /* Feste Breite */
     height: 20px; 
     display: inline-block;
