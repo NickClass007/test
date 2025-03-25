@@ -6,7 +6,7 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Übergänge für das Hintergrundfarbe und Textfarbe */
 }
 
-h1.dark-mode {
+/*h1.dark-mode {
     text-align: center;
     color: #ff8c00;
 }
@@ -19,7 +19,36 @@ h1.light-mode, h2.light-mode {
     text-align: center;
     color: #76c7c0;
 }
+/* Gemeinsame Formatierung für h1 und h2 */
+h1, h2 {
+  text-align: center;     /* Zentriert die Überschrift */
+  margin-bottom: 20px;     /* Abstand nach unten */
+}
+
+/* Dark Mode spezifische Stile */
+.dark-mode {
+  color: #ff8c00;          /* Textfarbe für Dark Mode */
+  background-color: #333;  /* Hintergrundfarbe für Dark Mode */
+  padding: 10px 20px;      /* Innenabstand */
+  border-radius: 8px;      /* Abgerundete Ecken */
+}
+.light-mode {
+  color: #76c7c0;          /* Textfarbe für Dark Mode */
+  background-color: #333;  /* Hintergrundfarbe für Dark Mode */
+  padding: 10px 20px;      /* Innenabstand */
+  border-radius: 8px;      /* Abgerundete Ecken */
+}
+
+/* Optional: Stil für h1 und h2, wenn du sie noch weiter anpassen möchtest */
 h1 {
+  font-size: 36px;         /* Schriftgröße für h1 */
+}
+
+h2 {
+  font-size: 24px;         /* Schriftgröße für h2 */
+}
+
+/*h1 {
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -27,7 +56,7 @@ h1 {
 h2 {
     font-size: 20px;
     margin-bottom: 16px;
-}
+}*/
 
 .settings {
     position: relative;
