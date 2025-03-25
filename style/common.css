@@ -28,8 +28,7 @@ h2 {
     width: 200px;            /* Feste Breite */
     height: 20px; 
     display: inline-block;
-    font-size: 20px;
-    color: #ff8c00; /* Standardfarbe für .settings */
+    font-size: 20px; /* Standardfarbe für .settings */
 }
 
 /* Dark Mode */
@@ -38,8 +37,18 @@ body.dark-mode {
     color: #e0e0e0; /* Textfarbe für Dark Mode */
 }
 
-body.dark-mode h1, body.dark-mode h2, .settings {
+body.dark-mode h1, body.dark-mode h2 {
     color: #ff8c00;  /* Textfarbe für Dark Mode */
+}
+
+/* Dark Mode */
+body.dark-mode .settings {
+    color: #ff8c00;  /* Textfarbe für .settings im Dark Mode */
+}
+
+/* Light Mode */
+body.light-mode .settings {
+    color: #76c7c0;  /* Textfarbe für .settings im Light Mode */
 }
 
 /* Light Mode */
@@ -48,7 +57,7 @@ body.light-mode {
     color: #333; /* Textfarbe für Light Mode */
 }
 
-body.light-mode h1, body.light-mode h2, .settings {
+body.light-mode h1, body.light-mode h2 {
     color: #76c7c0;  /* Textfarbe für Light Mode */
 }
 
