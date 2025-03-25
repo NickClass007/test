@@ -34,7 +34,7 @@ h1, h2 {
 }
 .light-mode {
   color: #76c7c0;          /* Textfarbe für Dark Mode */
-  background-color: #333;  /* Hintergrundfarbe für Dark Mode */
+  background-color: #f0f0f0;  /* Hintergrundfarbe für Dark Mode */
   padding: 10px 20px;      /* Innenabstand */
   border-radius: 8px;      /* Abgerundete Ecken */
 }
