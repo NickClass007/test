@@ -239,7 +239,7 @@ body.light-mode button:hover {
 /* Schalter für Dark/Light Mode */
 .switch {
     position: relative;
-    left: 80%;
+    left: 60%;
     top: 25px;
     display: inline-block;
     width: 60px;
