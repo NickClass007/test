@@ -31,11 +31,12 @@ h2 {
 }*/
 .settings {
     position: fixed;
-    top: 25%;
+    top: 35%;
     left: 20%; 
     display: inline-block;
     color: #ff8c00;
     font-size: 20px;
+    padding: 20px;
 }
 
 
