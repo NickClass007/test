@@ -1,22 +1,27 @@
 document.addEventListener("DOMContentLoaded", function() {
   const toggleSwitch = document.querySelector('#mode-switch');
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+  const currentTheme = localStorage.getItem('theme'); // Kein Need für ternäre Bedingung hier
 
+  // Wenn es bereits ein Theme im localStorage gibt, wende es an
   if (currentTheme) {
     document.body.classList.add(currentTheme);
-    if (currentTheme === 'light-mode') {
-      toggleSwitch.checked = true;
-    } else {
-      toggleSwitch.checked = false;
-    }
+    toggleSwitch.checked = currentTheme === 'light-mode'; // Optimierung: prüft, ob es 'light-mode' ist
+  } else {
+    // Wenn kein Theme gespeichert ist, verwende den Standard (Dark Mode)
+    document.body.classList.add('dark-mode');
   }
 
+  // Event-Listener für das Umschalten des Modus
   toggleSwitch.addEventListener('change', function() {
     if (this.checked) {
+      // Wechsel zu Light Mode
+      document.body.classList.remove('dark-mode');
       document.body.classList.add('light-mode');
       localStorage.setItem('theme', 'light-mode');
     } else {
+      // Wechsel zu Dark Mode
       document.body.classList.remove('light-mode');
+      document.body.classList.add('dark-mode');
       localStorage.setItem('theme', 'dark-mode');
     }
   });
@@ -36,10 +41,10 @@ document.getElementById('declination-link').addEventListener('click', function()
 
 // Event Listener für den "Query Index"-Link
 document.getElementById('queryindex-link').addEventListener('click', function() {
-    document.getElementById('queryindex-selection').style.display = 'block'; // Hier war der Fehler: `.syle` sollte `.style` sein
+    document.getElementById('queryindex-selection').style.display = 'block';
     history.pushState(null, '', 'queryindex.html');
 });
-  
+
 // Event Listener für den "Text"-Link
 document.getElementById('text-link').addEventListener('click', function() {
     document.getElementById('text-section').style.display = 'block';
