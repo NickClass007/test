@@ -6,7 +6,11 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Übergänge für das Hintergrundfarbe und Textfarbe */
 }
 
-h1.dark-mode, h2.dark-mode {
+h1.dark-mode {
+    text-align: center;
+    color: #ff8c00;
+}
+h2.dark-mode {
     text-align: center;
     color: #ff8c00;
 }
