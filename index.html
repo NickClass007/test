@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navis Salutaris</title>
+  <link rel="stylesheet" href="style/common.css">
+</head>
+<body>
+  <h1>Navis Salutaris</h1>
+  <h2>Wörterbuch</h2>
+
+  <div id="menu">
+    <a href="#" id="dictionary-link">Wörterbuch</a>
+    <a href="declination.html" id="declination-link">Deklination</a>
+    <a href="queryindex.html" id="queryindex-link">Vokabel Trainer</a>
+    <a href="text.html" id="text-link">Texte</a>
+    <a href="settings.html" id="settings-link">Einstellungen</a>
+  </div>
+
+  <!-- Wörterbuch-Bereich -->
+  <div id="dictionary-section" style="display:none;">
+    <h3>Wort hinzufügen</h3>
+    <form id="dictionary-form">
+      <input type="text" id="word" placeholder="Wort" required>
+      <input type="text" id="definition" placeholder="Definition" required>
+      <button type="submit">Hinzufügen</button>
+    </form>
+    
+    <h3>Gespeicherte Wörter</h3>
+    <div id="word-list"></div>
+  </div>
+
+  <script type="module" src="common.js"></script>
+</body>
+</html>
