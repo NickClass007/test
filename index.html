@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navis Salutaris</title>
+  <title>Navis-Salutaris</title>
   <link rel="stylesheet" href="style/common.css">
 </head>
 <body>
@@ -18,19 +18,14 @@
     <a href="settings.html" id="settings-link">Einstellungen</a>
   </div>
 
-  <!-- Wörterbuch-Bereich -->
+  <!-- Wörterbuch Sektion -->
   <div id="dictionary-section" style="display:none;">
-    <h3>Wort hinzufügen</h3>
-    <form id="dictionary-form">
-      <input type="text" id="word" placeholder="Wort" required>
-      <input type="text" id="definition" placeholder="Definition" required>
-      <button type="submit">Hinzufügen</button>
-    </form>
-    
-    <h3>Gespeicherte Wörter</h3>
-    <div id="word-list"></div>
+    <h3>Wörter und Definitionen</h3>
+    <div id="word-list">
+      <!-- Hier werden Wörter aus der Realtime Database angezeigt -->
+    </div>
   </div>
 
-  <script type="module" src="common.js"></script>
+  <script src="common.js"></script>
 </body>
 </html>
